@@ -16,7 +16,6 @@ If you don’t want to install the program, you can still use it. Just move the 
 
 # Functions
 
-FUNCTIONS
 Options for each function are shown with their default values.
 
 ```
