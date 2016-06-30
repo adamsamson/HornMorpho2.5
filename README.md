@@ -23,12 +23,13 @@ anal(language, word)
  Options: roman=False, root=True, gram=True, citation=True, raw=False, nbest=100 [Amharic only]
  Performs morphological analysis of the word. For ambiguous words returns the first nbest
  analyses. For Amharic only, analyses are ordered by their estimated frequency.
-`
+
+```
 >>> l3.anal('ti', 'ናብ')
  word: ናብ
 >>> l3.anal('ti', 'ፔፕሲ')
  ?word: ፔፕሲ
 >>> l3.anal('am', 'የማያስፈልጋትስ')
  word: የማያስፈልጋትስ
-`
+```
 
