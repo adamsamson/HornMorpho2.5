@@ -7,11 +7,17 @@ Natural language applications, such as question-answering, speech recognition, i
 # Installation
 
 To install HORNMORPHO, you will need to open a shell (often called “command prompt window” in Windows). In the shell, go to the HornMorpho2.5 directory (folder), and enter the following if you are on a Unix or Unix-like system, making sure that you are running Python 3.0 or 3.1.
+```
      python setup.py install
+```
 If you are using Windows, it will probably suffice to enter:
+```
      setup.py install
+```
 To test whether the installation succeeded, start up the Python interpreter, again making sure that you are running at least Python 3.0 (see Section 8.a in the horn2.5.pdf file if you don’t know how to do this), and type
+```
 import l3
+```
 If you don’t want to install the program, you can still use it. Just move the whole directory to a con- venient place in your file system, and then make sure you run the Python interpreter from the HornMorpho-2.5 directory, wherever that is.  
 
 # Functions
@@ -23,9 +29,7 @@ anal(language, word)
  Options: roman=False, root=True, gram=True, citation=True, raw=False, nbest=100 [Amharic only]
  Performs morphological analysis of the word. For ambiguous words returns the first nbest
  analyses. For Amharic only, analyses are ordered by their estimated frequency.
-```
-
-```
+ 
 >>> l3.anal('ti', 'ናብ')
  word: ናብ
 
