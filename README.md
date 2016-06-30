@@ -28,9 +28,62 @@ anal(language, word)
 ```
 >>> l3.anal('ti', 'ናብ')
  word: ናብ
+
 >>> l3.anal('ti', 'ፔፕሲ')
  ?word: ፔፕሲ
+
 >>> l3.anal('am', 'የማያስፈልጋትስ')
  word: የማያስፈልጋትስ
-```
+ POS: verb, root: <fl_g>, citation: አስፈለገ
+  subject: 3, sing, masc
+  object: 3, sing, fem
+  grammar: imperfective, causative, relative, definite, negative
+  conjunctive suffix: s
+  
+ >>> l3.anal('om', 'afeeramaniiru')
+ word: afeeramaniiru
+ POS: verb, root: <afeer>, citation: afeeramuu
+  subject: 3, plur
+  derivation: passive
+  TAM: perfect
 
+ >>> l3.anal('ti', 'ብዘጋጥመና')
+ word: ብዘጋጥመና
+ POS: verb, root: <gTm>, citation: ኣጋጠመ
+  subject: 3, sing, masc
+  object: 1, plur
+  grammar: imperfective, reciprocal, transitive, relative
+  preposition: bI
+
+ >>> l3.anal('am', 'አይደለችም')
+ word: አይደለችም
+ POS: copula, root: <ne>
+  subj: 3, sing, fem
+  negative
+
+ >>> l3.anal('ti', 'ዘየብለይ')
+ word: ዘየብለይ
+ POS: verb, root: <al_e>, citation: ኣሎ
+  subject: 3, sing, masc
+  object: 1, sing
+  grammar: present, relative, negative
+
+ >>> l3.anal('om', 'dubbanne')
+ word: dubbanne
+ POS: verb, root: <dubbadh>, citation: dubbachuu
+  TAM: past, negative
+ POS: verb, root: <dubbadh>, citation: dubbachuu
+  subject: 1, plur
+  TAM: past
+
+ >>> l3.anal('am', 'lezemedocacnm', roman=True)
+ word: lezemedocacnm
+ POS: noun, stem: zemed
+  possessor: 1, plur
+  grammar: plural
+  preposition: le, conjunctive suffix: m
+
+ >>> l3.anal('am', 'ቢያስጨንቁአቸው', root=False, gram=False)
+ word: ቢያስጨንቁአቸው
+ POS: verb, citation: አስጨነቀ
+```
