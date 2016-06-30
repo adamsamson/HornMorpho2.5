@@ -1,0 +1,8 @@
+sal_ehu          al_e    [tm=prs,-neg,cj1=sI,pp=nil,-rel,+sub,sb=[+p1,-p2,-plr]]
+sal_eh           al_e    [tm=prs,-neg,cj1=sI,pp=nil,-rel,+sub,sb=[-p1,+p2,-fem,-plr]]
+sal_ex           al_e    [tm=prs,-neg,cj1=sI,pp=nil,-rel,+sub,sb=[-p1,+p2,-fem,-plr]]
+sal_e            al_e    [tm=prs,-neg,cj1=sI,pp=nil,-rel,+sub,sb=[-p1,-p2,-fem,-plr]]
+sal_ec_          al_e    [tm=prs,-neg,cj1=sI,pp=nil,-rel,+sub,sb=[-p1,-p2,+fem,-plr]]
+sal_en           al_e    [tm=prs,-neg,cj1=sI,pp=nil,-rel,+sub,sb=[+p1,-p2,+plr]]
+sal_ac_hu        al_e    [tm=prs,-neg,cj1=sI,pp=nil,-rel,+sub,sb=[-p1,+p2,+plr]]
+sal_u            al_e    [tm=prs,-neg,cj1=sI,pp=nil,-rel,+sub,sb=[-p1,-p2,+plr]]
