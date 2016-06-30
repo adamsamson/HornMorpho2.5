@@ -108,6 +108,9 @@ anal(language, word)
  POS: verb, root: <mT'>, citation: መጣ
   subject: 3, plur
   grammar: imperfective, aux:alle
+```
+
+```
  anal_file(language, input_file, output_file)
  Options: root=True, gram=True, citation=True, raw=False
  Runs anal on the words in a file.
@@ -116,6 +119,10 @@ anal(language, word)
   'l3/languages/am/data/ag_out.txt')
  Analyzing words in l3/languages/am/data/ag.txt
  Writing to l3/languages/am/data/ag_out.txt
+ ```
+ 
+ 
+ ```
  seg(language, word) [Amharic and Oromo verbs and Oromo nouns only]
  Options: roman=False, gram=True, raw=False
  Performs morphological segmentation on the word. Morphemes are separated by ‘-’; stems/roots
@@ -139,6 +146,9 @@ anal(language, word)
   'l3/languages/am/data/ag_out.txt')
  Segmenting words in l3/languages/am/data/ag.txt
  Writing to l3/languages/am/data/ag_out.txt
+ ```
+ 
+ ```
  phon(language, word) [Amharic only]
  Options: gram=True
  Converts an Amharic word written in Ge’ez characters to a romanized form that shows consonant
@@ -160,6 +170,9 @@ anal(language, word)
 
  >>> l3.phon('am', 'እንድብር')
  ?IndIbIr (0)
+ ```
+ 
+ ```
  phon_file(language, input_file, output_file) [Amharic only]
  Options: gram=True, print_ortho=False, word_sep='\n', anal_sep=' '
  Runs phon on the words in a file.
@@ -174,6 +187,9 @@ anal(language, word)
  Analyzing words in l3/languages/am/data/ag.txt
  yIh:meShaf:yezarE:01:amet:gedema:bedenbu:mIrmera:alfo:tat_Imo:beweT_a:g
  izE:tal_aq_ tal_aq:cIg_Ir:feTrob_IN_:neb_er:.
+ ```
+ 
+ ```
  gen(language, root/stem, [grammatical_features])
  Options: roman=False, guess=False [Amharic, Tigrinya only]
  Generates the surface form of a word given a root or stem and optional grammatical features.
