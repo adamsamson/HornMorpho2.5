@@ -1,4 +1,6 @@
-# HornMorpho 2.5 
+# HornMorpho 2.5
+
+[![Help Contribute to Open Source](https://www.codetriage.com/adamsamson/hornmorpho2.5/badges/users.svg)](https://www.codetriage.com/adamsamson/hornmorpho2.5)
 
 HORNMORPHO is a Python program that analyzes Amharic, Oromo, and Tigrinya words into their constituent morphemes (meaningful parts) and generates words, given a root or stem and a representation of the word’s grammatical structure. It is part of the L3 project at Indiana University <http://www.cs.indiana.edu/~gasser/Research/projects.html>, which is dedicated to developing computational tools for under-resourced languages.
 
@@ -18,7 +20,7 @@ To test whether the installation succeeded, start up the Python interpreter, aga
 ```
 import l3
 ```
-If you don’t want to install the program, you can still use it. Just move the whole directory to a con- venient place in your file system, and then make sure you run the Python interpreter from the HornMorpho-2.5 directory, wherever that is.  
+If you don’t want to install the program, you can still use it. Just move the whole directory to a con- venient place in your file system, and then make sure you run the Python interpreter from the HornMorpho-2.5 directory, wherever that is.
 
 # Functions
 
@@ -29,7 +31,7 @@ anal(language, word)
  Options: roman=False, root=True, gram=True, citation=True, raw=False, nbest=100 [Amharic only]
  Performs morphological analysis of the word. For ambiguous words returns the first nbest
  analyses. For Amharic only, analyses are ordered by their estimated frequency.
- 
+
 >>> l3.anal('ti', 'ናብ')
  word: ናብ
 
@@ -43,7 +45,7 @@ anal(language, word)
   object: 3, sing, fem
   grammar: imperfective, causative, relative, definite, negative
   conjunctive suffix: s
-  
+
  >>> l3.anal('om', 'afeeramaniiru')
  word: afeeramaniiru
  POS: verb, root: <afeer>, citation: afeeramuu
@@ -94,7 +96,7 @@ anal(language, word)
  >>> l3.anal('am', 'ለዘመዶቻችንም', raw=True)
  [('zemed', [-acc, cnj='m', der=[-ass], -dis, +plr, pos='n',
  poss=[+expl, +p1, -p2, +plr], pp='le', rl=[-acc, +p], v=None])]
- 
+
  >>> l3.anal('am', 'ይመጣሉ')
  word: ይመጣሉ
  POS: verb, root: <mT'>, citation: መጣ
@@ -106,7 +108,7 @@ anal(language, word)
  POS: verb, root: <mT'>, citation: ተመጣ
   subject: 3, plur
   grammar: imperfective, aux:alle, passive
- 
+
  >>> l3.anal('am', 'ይመጣሉ', nbest=1)
  word: ይመጣሉ
  POS: verb, root: <mT'>, citation: መጣ
@@ -118,24 +120,24 @@ anal(language, word)
  anal_file(language, input_file, output_file)
  Options: root=True, gram=True, citation=True, raw=False
  Runs anal on the words in a file.
- 
+
  >>> l3.anal_file('am', 'l3/languages/am/data/ag.txt',
   'l3/languages/am/data/ag_out.txt')
  Analyzing words in l3/languages/am/data/ag.txt
  Writing to l3/languages/am/data/ag_out.txt
  ```
- 
- 
+
+
  ```
  seg(language, word) [Amharic and Oromo verbs and Oromo nouns only]
  Options: roman=False, gram=True, raw=False
  Performs morphological segmentation on the word. Morphemes are separated by ‘-’; stems/roots
  appear within ‘{}’.
- 
+
  >>> l3.seg('am', 'ሲያጭበረብሩን')
  ሲያጭበረብሩን:
  s(cnj1)-y(sb=3sm|3p)-{Cbrbr+a12e3e4_5}(imprf,trans)-u(sb=2p|3p)-n(ob=1p)
- 
+
  >>> l3.seg('om', 'afeeramaniiru', gram=True)
  word: afeeramaniiru
  POS: verb, segmentation: {afeer-am}-an-r-u
@@ -151,7 +153,7 @@ anal(language, word)
  Segmenting words in l3/languages/am/data/ag.txt
  Writing to l3/languages/am/data/ag_out.txt
  ```
- 
+
  ```
  phon(language, word) [Amharic only]
  Options: gram=True
@@ -175,7 +177,7 @@ anal(language, word)
  >>> l3.phon('am', 'እንድብር')
  ?IndIbIr (0)
  ```
- 
+
  ```
  phon_file(language, input_file, output_file) [Amharic only]
  Options: gram=True, print_ortho=False, word_sep='\n', anal_sep=' '
@@ -192,7 +194,7 @@ anal(language, word)
  yIh:meShaf:yezarE:01:amet:gedema:bedenbu:mIrmera:alfo:tat_Imo:beweT_a:g
  izE:tal_aq_ tal_aq:cIg_Ir:feTrob_IN_:neb_er:.
  ```
- 
+
  ```
  gen(language, root/stem, [grammatical_features])
  Options: roman=False, guess=False [Amharic, Tigrinya only]
